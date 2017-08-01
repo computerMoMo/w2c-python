@@ -20,9 +20,9 @@ class TextReader(object):
                     yield line.split()
 
 if __name__ == '__main__':
-    train_file_path = 'data/en-txt/'
-    vectors_save_path = 'data/'
-    word_dim = 50
+    train_file_path = 'corpus/'
+    vectors_save_path = 'vectors/'
+    word_dim = 100
     word_min_count = 1
     model_workers = multiprocessing.cpu_count()
     en_text = TextReader(train_file_path)
